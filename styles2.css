@@ -1,11 +1,17 @@
+/*This CSS is for the Quadratic equation page*/
 body{
   background-image: url('https://github.com/JossPicardal/2page-website/blob/master/source.gif?raw=true');
   background-size: cover;
 }
 
+#img{
+  position: center;
+  height:200px;
+  width:360px;
+}
 
 #container {
-  height: 525px;
+  height: 700px;
   width: 360px;
   margin: 100px auto;
   background: #f7f7f7;
@@ -21,4 +27,63 @@ h1{
   text-transform: uppercase;
   font-size: 18px;
   font-weight: normal;
+}
+
+form input[type="text"] {
+  width=90px;
+  height=100px;
+}
+
+input {
+  padding-left: 20px;
+}
+
+button {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin: 30px auto;
+  background: #AD133A;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  font-size: 17px;
+  color: white;
+}
+
+button:hover {
+  background: #4c2827;
+  border-bottom-color: #111;
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, red);
+  animation:slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+}
+#quadAnswer {
+  font-size: 30px;
+  margin-top: -250px;
+  text-align: center;
+  color: red;
+  margin-bottom: -100px;
+  display: block;
+}
+
+#quadAnswer:before {
+  content: "Answer";
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  text-transform: uppercase;
+}
+p {
+  padding-left: 20px;
 }
