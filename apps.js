@@ -1,10 +1,9 @@
-    var quadAnswer = document.getElementById("quadAnswer");
-    var pythAnswer = document.getElementById("pythAnswer");
       function quadSolve() { //EQ for Quadratic equation section
           // get the input
          var a = document.getElementById("A").value;
          var b = document.getElementById("B").value;
          var c = document.getElementById("C").value;
+         var quadAnswer = document.getElementById("quadAnswer");
             
           // validate a, b and c
           if (a == 0) {
@@ -18,8 +17,8 @@
           } else {
             var x1 = (-b - Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a);
             var x2 = (-b + Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a);
-            quadAnswer = "For the equation <strong>" + (a == 1 ? "" : a) + "x\u00B2 + " + (b == 1 ? "" : b) + "x + " + c + " = 0</strong>, x can equal <strong>" + x1 + "</strong> or <strong>" + x2 + "</strong>";
-         }  
+            quadAnswer = "X can equal <strong>" + x1 + "</strong> or <strong>" + x2 + "</strong>";
+         } 
         // output the result (or errors)
        document.getElementById("quadAnswer").style.display = 'block';
     }
@@ -29,18 +28,15 @@
       var aa = document.getElementById("angleA").value;
       var ab = document.getElementById("angleB").value;
       var ac = document.getElementById("angleC").value;
+      var pythAnswer = document.getElementById("pythAnswer");
 
-      if (Number.isNaN(aa) && !Number.isNaN(ab) && !Number.isNaN(ac)) {
+      if (isNaN(aa) && !isNaN(ab) && !isNaN(ac)) {
         const a = Math.sqrt(c ** 2 - b ** 2);
         output.textContent = ' ' + a;
-      }
-
-      if (Number.isNaN(ab) && !Number.isNaN(aa) && !Number.isNaN(ac)) {
+      } else if (isNaN(ab) && !isNaN(aa) && !isNaN(ac)) {
         const b = Math.sqrt(c ** 2 - a ** 2);
         output.textContent = ' ' + b;
-      }
-
-      if (Number.isNaN(ac) && !Number.isNaN(aa) && !Number.isNaN(ab)) {
+      } else if (isNaN(ac) && !isNaN(aa) && !isNaN(ab)) {
         const c = Math.sqrt(a ** 2 + b ** 2);
         output.textContent = ' ' + c;
       }
@@ -90,4 +86,3 @@
           var workArea = document.getElementById("final");
           workArea.innerHTML = final ;
       }
-      
