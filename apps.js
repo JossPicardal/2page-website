@@ -4,6 +4,7 @@
          var a = document.getElementById("A").value;
          var b = document.getElementById("B").value;
          var c = document.getElementById("C").value;
+         var quadAnswer = document.getElementById("quadAnswer");
             
           // validate a, b and c
           if (a == 0) {
@@ -18,23 +19,17 @@
             var x1 = (-b - Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a);
             var x2 = (-b + Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a);
             quadAnswer = "For the equation <strong>" + (a == 1 ? "" : a) + "x\u00B2 + " + (b == 1 ? "" : b) + "x + " + c + " = 0</strong>, x can equal <strong>" + x1 + "</strong> or <strong>" + x2 + "</strong>";
-         }
-            
+         }  
         // output the result (or errors)
-       document.getElementById("quadAnswer").style.display = "block";
-       document.getElementById("answer").innerHTML = "total";
+       document.getElementById("quadAnswer").style.display = 'block';
     }
 
 
-    document.getElementById("Calculate").onclick = function() {
-    quadSolve()
-    };
-
-    function pythSolve() { //EQ for Quadratic equation section 
+    function pythSolve() { //EQ for Pythagoerean equation section 
       var aa = document.getElementById("angleA").value;
       var ab = document.getElementById("angleB").value;
       var ac = document.getElementById("angleC").value;
-      var output = document.getElementById("output");
+      var pythAnswer = document.getElementById("pythAnswer");
 
       if (Number.isNaN(aa) && !Number.isNaN(ab) && !Number.isNaN(ac)) {
         const a = Math.sqrt(c ** 2 - b ** 2);
@@ -50,7 +45,8 @@
         const c = Math.sqrt(a ** 2 + b ** 2);
         output.textContent = ' ' + c;
       }
-      document.getElementById("quadAnswer").style.display = "block";
+      //output the result
+      document.getElementById("pythAnswer").style.display = 'block';
     }
 
 
