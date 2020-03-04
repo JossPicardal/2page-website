@@ -1,10 +1,10 @@
-    
+    var quadAnswer = document.getElementById("quadAnswer");
+    var pythAnswer = document.getElementById("pythAnswer");
       function quadSolve() { //EQ for Quadratic equation section
           // get the input
          var a = document.getElementById("A").value;
          var b = document.getElementById("B").value;
          var c = document.getElementById("C").value;
-         var quadAnswer = document.getElementById("quadAnswer");
             
           // validate a, b and c
           if (a == 0) {
@@ -29,7 +29,6 @@
       var aa = document.getElementById("angleA").value;
       var ab = document.getElementById("angleB").value;
       var ac = document.getElementById("angleC").value;
-      var pythAnswer = document.getElementById("pythAnswer");
 
       if (Number.isNaN(aa) && !Number.isNaN(ab) && !Number.isNaN(ac)) {
         const a = Math.sqrt(c ** 2 - b ** 2);
