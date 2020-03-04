@@ -6,7 +6,7 @@ body{
 
 
 #container {
-  height: 525px;
+  height: 720px;
   width: 360px;
   margin: 100px auto;
   background: #f7f7f7;
@@ -60,19 +60,20 @@ button:active {
   position: relative;
   top: 1px;
 }
-#quadANswer {
+#output {
   font-size: 30px;
-  margin-top: -250px;
+  margin-top: -50px;
   text-align: center;
   color: red;
   margin-bottom: -100px;
   display: block;
 }
 
-#quadANswer:before {
-  content: "Answer";
-  font-size: 20px;
-  font-weight: bold;
+h3{
+  font-size: 30px;
+  margin-top: -50px;
+  text-align: center;
+  color: red;
+  margin-bottom: -50px;
   display: block;
-  text-transform: uppercase;
 }

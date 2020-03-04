@@ -9,7 +9,7 @@
   <div id="container">
     <form>
     <h1>Pythagorean Equation</h1>
-    <img src="https://lh3.googleusercontent.com/proxy/A3_c0Xc9J9wBRwtMMYcghmhEZc8TMMgelKnUKKz-UAH7IQDQU6nqw0V-S_eIvdWSC_EVDrGcVeCLyt9IChW9-mAXWDVpqbmWvPGZF1cFzxql0ca2TA4rdSI-gI8K2hHYS7HyIp8" width="300px" height="200px">
+    <img src="https://raw.githubusercontent.com/JossPicardal/2page-website/master/unnamed.jpg" width="300px" height="200px">
       <p>Enter value for angle A </p>
       <input id="angleA" type="text" placeholder="Input angle A">
       <p>Enter value for angle B </p>
@@ -18,11 +18,9 @@
       <input id="angleC" type="text" placeholder="Input angle C">
     
   </div>
+  <h3>The Missing side is: <span id="output"></span></h3>
   </form>
-  <button  type="button" id='Calculate1'>Calculate Equation</button>
-  <div id="pythAnswer">
-      <span id="answer"></span>
-    </div>
+  <button type="button" onclick="pythSolve()">Calculate Equation</button>
   <script type="text/javascript" src="apps.js"></script>
 </body>
 </html>
